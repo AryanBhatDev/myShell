@@ -26,7 +26,7 @@ func execInput(input string) error {
         os.Exit(0)
     }
 
-    cmd := exec.Command(args[0], args[1:]...)
+    cmd := exec.Command("bash", "-c", input)
 
     cmd.Stderr = os.Stderr
     cmd.Stdout = os.Stdout
