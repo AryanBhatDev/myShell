@@ -15,7 +15,7 @@ func main() {
         if err != nil {
             fmt.Fprintln(os.Stderr, err)
         }
-
+		fmt.Println(input)
         if err = execInput(input); err != nil {
             fmt.Fprintln(os.Stderr, err)
         }
